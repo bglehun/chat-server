@@ -1,6 +1,6 @@
-package com.aimed.signalschat.socket.handler
+package com.socket.handler
 
-import com.aimed.signalschat.entity.jpa.DmMessage
+import com.entity.jpa.DmMessage
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.data.redis.core.RedisTemplate
 import org.springframework.data.redis.listener.ChannelTopic

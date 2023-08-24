@@ -1,8 +1,8 @@
-package com.aimed.signalschat.socket.common.interceptor
+package com.socket.common.interceptor
 
-import com.aimed.signalschat.common.exception.CustomError
-import com.aimed.signalschat.common.exception.CustomException
-import com.aimed.signalschat.component.token.request.JwtValidationRequestClient
+import com.common.exception.CustomError
+import com.common.exception.CustomException
+import com.component.token.request.JwtValidationRequestClient
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.messaging.Message
 import org.springframework.messaging.MessageChannel

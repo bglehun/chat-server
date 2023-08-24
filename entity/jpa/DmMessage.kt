@@ -1,6 +1,6 @@
-package com.aimed.signalschat.entity.jpa
+package com.entity.jpa
 
-import com.aimed.signalschat.api.dto.DmDto
+import com.api.dto.DmDto
 import jakarta.persistence.*
 import org.springframework.data.annotation.CreatedDate
 import java.time.LocalDateTime

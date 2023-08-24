@@ -1,7 +1,7 @@
-package com.aimed.signalschat.config
+package com.config
 
-import com.aimed.signalschat.entity.jpa.DmMessage
-import com.aimed.signalschat.socket.handler.RedisSubscriber
+import com.entity.jpa.DmMessage
+import com.socket.handler.RedisSubscriber
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.lettuce.core.cluster.ClusterClientOptions
 import io.lettuce.core.cluster.ClusterTopologyRefreshOptions

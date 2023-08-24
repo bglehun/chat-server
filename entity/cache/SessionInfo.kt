@@ -1,4 +1,4 @@
-package com.aimed.signalschat.entity.cache
+package com.entity.cache
 
 data class SessionInfo(
     val sessionId: String,

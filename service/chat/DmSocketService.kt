@@ -1,15 +1,15 @@
-package com.aimed.signalschat.socket.service.chat
+package com.socket.service.chat
 
-import com.aimed.signalschat.common.exception.CustomError
-import com.aimed.signalschat.common.exception.CustomException
-import com.aimed.signalschat.entity.cache.SessionInfo
-import com.aimed.signalschat.entity.jpa.DmMessage
-import com.aimed.signalschat.repository.cache.DmCacheRepository
-import com.aimed.signalschat.repository.jpa.DmMemberJpaRepository
-import com.aimed.signalschat.repository.jpa.DmMessageJpaRepository
-import com.aimed.signalschat.socket.dto.DmMessageDto
-import com.aimed.signalschat.socket.handler.RedisPublisher
-import com.aimed.signalschat.socket.handler.RedisSubscriber
+import com.common.exception.CustomError
+import com.common.exception.CustomException
+import com.entity.cache.SessionInfo
+import com.entity.jpa.DmMessage
+import com.repository.cache.DmCacheRepository
+import com.repository.jpa.DmMemberJpaRepository
+import com.repository.jpa.DmMessageJpaRepository
+import com.socket.dto.DmMessageDto
+import com.socket.handler.RedisPublisher
+import com.socket.handler.RedisSubscriber
 import org.slf4j.*
 import org.springframework.data.redis.listener.RedisMessageListenerContainer
 import org.springframework.messaging.simp.SimpMessageSendingOperations

@@ -1,7 +1,7 @@
-package com.aimed.signalschat.socket.handler
+package com.socket.handler
 
-import com.aimed.signalschat.entity.cache.SessionInfo
-import com.aimed.signalschat.socket.service.chat.DmSocketService
+import com.entity.cache.SessionInfo
+import com.socket.service.chat.DmSocketService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.context.event.EventListener
@@ -26,12 +26,8 @@ class WebSocketListener(
     }
 
     @EventListener
-    fun handleWebSocketDisconnectListener(event: SessionDisconnectEvent) = if (event.user == null) {
-        // close status가 1000이 아닌 경우 event.user가 없음.
-        logger.info("handleWebSocketDisconnectListener event is null... {}", event)
-    } else {
+    fun handleWebSocketDisconnectListener(event: SessionDisconnectEvent) = if (event.user == null) =
         dmSocketService.removeUserAndRedisMessageLister(getSessionInfo(event))
-    }
 
     @EventListener
     fun handleWebSocketSubscribeListener(event: SessionSubscribeEvent) =

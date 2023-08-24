@@ -1,6 +1,6 @@
-package com.aimed.signalschat.socket.dto
+package com.socket.dto
 
-import com.aimed.signalschat.entity.jpa.DmMessage
+import com.entity.jpa.DmMessage
 
 class DmMessageDto(
     val roomId: String,

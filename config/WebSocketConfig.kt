@@ -1,7 +1,7 @@
-package com.aimed.signalschat.config
+package com.config
 
-import com.aimed.signalschat.common.exception.StompExceptionHandler
-import com.aimed.signalschat.socket.common.interceptor.*
+import com.common.exception.StompExceptionHandler
+import com.socket.common.interceptor.*
 import org.springframework.context.annotation.*
 import org.springframework.messaging.simp.config.*
 import org.springframework.scheduling.*

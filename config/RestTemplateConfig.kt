@@ -1,4 +1,4 @@
-package com.aimed.signalschat.config
+package com.config
 
 import org.springframework.boot.web.client.*
 import org.springframework.context.annotation.Bean

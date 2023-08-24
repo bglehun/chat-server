@@ -1,6 +1,6 @@
-package com.aimed.signalschat.socket.handler
+package com.socket.handler
 
-import com.aimed.signalschat.entity.jpa.DmMessage
+import com.entity.jpa.DmMessage
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
@@ -27,17 +27,5 @@ class RedisSubscriber(
         val dmMessage = objectMapper.readValue(messageString, DmMessage::class.java)
 
         simpMessageSendingOperations.convertAndSend("/subscribe/user/${dmMessage.receiverId}", dmMessage)
-
-//        simpMessageSendingOperations.convertAndSendToUser(
-//            accessor.sessionId.toString(),
-//            "/queue/dm",
-//            DmMessage(
-//                roomId = message.roomId,
-//                message = message.message,
-//                type = message.type,
-//                senderId = "hun",
-//            ),
-//            accessor.messageHeaders,
-//        )
     }
 }

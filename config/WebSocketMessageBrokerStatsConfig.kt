@@ -1,4 +1,4 @@
-package com.aimed.signalschat.config
+package com.config
 
 import jakarta.annotation.PostConstruct
 import org.springframework.context.annotation.Configuration

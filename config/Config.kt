@@ -1,4 +1,4 @@
-package com.aimed.signalschat.config
+package com.config
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature
